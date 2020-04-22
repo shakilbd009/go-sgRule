@@ -55,25 +55,37 @@ func main() {
 	go readCSV(*file, csch)
 	inboundDATA := <-csch
 	outboundDATA := <-csch
-	for _, v := range inboundDATA {
-		go getSGfromIP(cfg, v.dest, sgch)
-		sgid := <-sgch
+	insgID := ""
+	outsgID := ""
+	for i, v := range inboundDATA {
+		if i == 0 {
+			go getSGfromIP(cfg, v.dest, sgch)
+			insgID = <-sgch
+		} else if v.dest != inboundDATA[i-1].dest {
+			go getSGfromIP(cfg, v.dest, sgch)
+			insgID = <-sgch
+		}
 		port, err := strconv.ParseInt(v.port, 10, 64)
 		if err != nil {
 			panic(err)
 		}
-		go createInboundSGRule(cfg, v.protocol, sgid, v.description, v.source, port, ibch)
-		go getSGRules(cfg, sgid, gtch)
+		go createInboundSGRule(cfg, v.protocol, insgID, v.description, v.source, port, ibch)
+		go getSGRules(cfg, insgID, gtch)
 	}
-	for _, v := range outboundDATA {
-		go getSGfromIP(cfg, v.dest, sgch)
-		sgid := <-sgch
+	for i, v := range outboundDATA {
+		if i == 0 {
+			go getSGfromIP(cfg, v.dest, sgch)
+			outsgID = <-sgch
+		} else if v.dest != outboundDATA[i-1].dest {
+			go getSGfromIP(cfg, v.dest, sgch)
+			outsgID = <-sgch
+		}
 		port, err := strconv.ParseInt(v.port, 10, 64)
 		if err != nil {
 			panic(err)
 		}
-		go createOutBoundSGRule(cfg, v.protocol, sgid, v.description, v.source, port, obch)
-		go getSGRules(cfg, sgid, gtch)
+		go createOutBoundSGRule(cfg, v.protocol, outsgID, v.description, v.source, port, obch)
+		go getSGRules(cfg, outsgID, gtch)
 	}
 
 	for range inboundDATA {
@@ -290,9 +302,10 @@ func getSGRules(cfg aws.Config, sgid string, ch chan ec2.SecurityGroup) {
 func errRecover() {
 	if r := recover(); r != nil {
 		fmt.Println("An error has occured:")
-		fmt.Printf("%s\n\n", strings.Repeat("💀", 70))
+		fmt.Printf("%s\n\n", strings.Repeat("💀", 50))
 		fmt.Println(r)
 		fmt.Printf("\n")
-		fmt.Println(strings.Repeat("💀", 70))
+		fmt.Println(strings.Repeat("💀", 50))
+		//os.Exit(1) optional, if you want to stop the excution if error occurs.
 	}
 }
