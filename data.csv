@@ -1,0 +1,97 @@
+source/dest,protocol,description,port,destination,direction
+192.168.8.221,tcp,firewall request no #blablabla,443,124.43.40.0/21 124.43.9.0/23,inbound
+192.168.8.221,tcp,firewall request no #blablabla,444,124.43.20.0/21 10.0.1.0/24,outbound
+192.168.8.221,tcp,firewall request no #blablabla,24,124.43.44.9 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.45 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.46 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.47 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.48 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.49 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.40 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.44 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.43 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.42 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.41 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.4 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.52,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.21,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.1 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.12,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.13 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.14 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.15 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.16 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.17,inbound 
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.18 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,124.43.44.19 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.1,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.2 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.3 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.4 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.5 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.7 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.6 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.8 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.9 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.10 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.11 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.12 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.13 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.14 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.15 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.16 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.17 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.18 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.19 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.20 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.21 ,inbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.22 ,outbound
+192.168.8.221,tcp,firewall request no #blablabla,23,172.25.72.23 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,443,124.43.40.0/21 124.43.9.0/23,inbound
+172.27.2.99,tcp,firewall request no #blablabla,444,124.43.20.0/21 10.0.1.0/24,outbound
+172.27.2.99,tcp,firewall request no #blablabla,24,124.43.44.9 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.45 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.46 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.47 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.48 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.49 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.40 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.44 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.43 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.42 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.41 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.4 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.52,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.21,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.1 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.12,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.13 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.14 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.15 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.16 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.17,inbound 
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.18 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,124.43.44.19 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.1,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.2 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.3 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.4 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.5 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.7 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.6 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.8 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.9 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.10 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.11 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.12 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.13 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.14 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.15 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.16 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.17 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.18 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.19 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.20 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.21 ,inbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.22 ,outbound
+172.27.2.99,tcp,firewall request no #blablabla,23,172.25.72.23 ,outbound
